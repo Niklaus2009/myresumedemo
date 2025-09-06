@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>FORM</h1>
+    <form action="">
+        <!-- required--Mandatory Feild -->
+       <label for="fname">First name:</label> 
+       <input minlength="3" maxlength="12" type="text" required id="fname">
+       <label for="mname">Middle Name:</label>
+       <input type="text" id="mname" value="Kumar">     
+       <label for="lname">Last Name:</label>
+       <input type="text" id="lname">
+       <br><br>
+       <label for="age">Age:</label>
+       <input type="number" id="age">
+       <br><br>
+       <label for="mail">Email:</label>
+       <input type="email" id="mail">
+       <br><br>
+       <label for="">Date:</label>
+       <input type="date">
+       <br><br>
+       <label for="p">Password:</label>
+       <input type="password" id="p">
+       <br><br>
+       <label for=""><b>Shirt Size:</b></label>
+       <!-- "same name" causes only one value to be selected -->
+        <!-- for & id se poore word pe click karne se select ho jayega -->
+       <input type="radio" name="Shirt Size" id="small"><label for="small">Small</label>
+       <input type="radio" name="Shirt Size" id="medium" checked><label for="medium">Medium</label>
+       <input type="radio" name="Shirt Size" id="large"><label for="large">Large</label>
+
+       <br><br>
+
+       <label for=""><b>Lang:</b></label><br>
+       <!-- It is Good Practice and recommended to write value on each input -->
+       <input type="checkbox" name="lang" id="Hindi" value="Hindi"><label for="Hindi">Hindi</label>
+       <input type="checkbox" name="lang" id="English"><label for="English">English</label>
+       <input type="checkbox" name="lang" id="French"><label for="French">French</label>
+       <input type="checkbox" name="lang" id="German"><label for="German">German</label>
+       
+       <br><br>
+       <label for="color">Choose Color</label>
+       <input type="color" id="color">
+
+       <br><br>
+       <label for="payment">Payment Method</label>
+       <select name="option" id="payment">
+        <option value=""></option>
+        <option value="gPay">gPAy</option>
+        <option value="Paytm">Paytm</option>
+        <option value="Card">Card</option>
+       </select>
+
+       <br><br>
+       <label for="feedback">Feedback</label><br>
+       <textarea name="" id="feedback" cols="80" rows="20" placeholder="Give Your Valuable Feedback"></textarea>
+       <br><br>
+       <input type="reset"> <input type="submit">
+       
+
+    </form>
+</body>
+</html>
